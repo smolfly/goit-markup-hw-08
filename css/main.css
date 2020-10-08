@@ -488,21 +488,19 @@ img {
   display: none;
 }
 
-.navigation .navigation.is-open {
-  display: flex;
-}
-
 @media screen and (min-width: 480px) {
-  .navigation {
+  .navigation .navigation .is-open {
     display: flex;
     position: absolute;
+    flex-direction: column;
+    background-color: #ffffff;
     top: 100%;
     width: 100%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .navigation {
+  .navigation .navigation .is-open {
     color: #212121;
     font-weight: 500;
     font-size: 14px;

@@ -60,17 +60,17 @@
   display: none;
 
 
-.navigation.is-open {
-  display: flex;
-}
-
+.navigation .is-open {
   
   @media screen and (min-width: $mobile){
    display: flex;
    position: absolute;
+   flex-direction: column;
+   background-color: $primary-white-color;
    top: 100%;
    width: 100%;
   }
+
 
   @media screen and (min-width: $desktop) {
     color: $title-text-color;
@@ -91,7 +91,8 @@
     align-items: center;
     margin-right: auto;
   }
-}
+}}
+
 
 .site-nav .current {
   color: $accent-color;
