@@ -468,10 +468,6 @@ img {
   }
 }
 
-.site-nav {
-  display: none;
-}
-
 @media screen and (min-width: 1200px) {
   .site-nav {
     display: flex;
@@ -535,10 +531,6 @@ img {
 }
 
 /* Контакты */
-.contact-info {
-  display: none;
-}
-
 @media screen and (min-width: 1200px) {
   .contact-info {
     display: flex;

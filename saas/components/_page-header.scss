@@ -34,7 +34,7 @@
 }
 
 .site-nav {
-  display: none;
+ 
 
   @media screen and (min-width: $desktop) {
     display: flex;
@@ -101,7 +101,7 @@
 /* Контакты */
 
 .contact-info {
-  display: none;
+
 
   @media screen and (min-width: $desktop) {
     display: flex;
