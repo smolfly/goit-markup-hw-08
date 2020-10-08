@@ -26,7 +26,8 @@
 
 .advantages-list {
   margin: 0;
-  padding-left: 0;
+  padding-right: 15px;
+  padding-left: 15px;
 
   @media screen and (min-width: $desktop) {
     display: flex;

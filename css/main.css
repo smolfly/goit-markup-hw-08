@@ -446,10 +446,6 @@ img {
   }
 }
 
-.site-nav .link {
-  display: none;
-}
-
 @media screen and (min-width: 1200px) {
   .site-nav .link {
     display: flex;
@@ -535,10 +531,6 @@ img {
 }
 
 /* Контакты */
-.contact-info {
-  display: none;
-}
-
 @media screen and (min-width: 1200px) {
   .contact-info {
     display: flex;
@@ -695,7 +687,8 @@ img {
 
 .advantages-list {
   margin: 0;
-  padding-left: 0;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 @media screen and (min-width: 1200px) {
