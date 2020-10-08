@@ -1,6 +1,7 @@
 /* Навигация */
 
 .page-header {
+  position: relative;
   padding-top: 16px;
   padding-bottom: 16px;
 
@@ -56,6 +57,15 @@
 }
 
 .navigation {
+  display: none;
+  
+  @media screen and (min-width: $mobile) {
+   display: flex;
+   position: absolute;
+   top: 100%;
+   width: 100%;
+  }
+
   @media screen and (min-width: $desktop) {
     color: $title-text-color;
     // padding-top: 32px;

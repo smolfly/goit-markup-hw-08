@@ -434,6 +434,7 @@ img {
 
 /* Навигация */
 .page-header {
+  position: relative;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -489,6 +490,19 @@ img {
 
 .site-nav-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.navigation {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .navigation {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
