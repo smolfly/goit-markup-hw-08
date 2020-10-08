@@ -1,0 +1,81 @@
+/* Постоянные клиенты */
+
+.clients-list {
+  display: flex;
+}
+
+
+
+.client-item {
+  width: calc((100%-5 * 30px) / 6);
+
+  display: flex;
+  width: 170px;
+  height: 90px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+
+
+  &:not(:last-child) {
+  margin-right: 30px;
+}
+}
+
+.first-company {
+  width: 44px;
+  height: 49px;
+  fill: currentColor;
+}
+
+.second-company {
+  width: 40px;
+  height: 54px;
+  fill: currentColor;
+}
+
+.third-company {
+  width: 41px;
+  height: 43px;
+  fill: currentColor;
+}
+
+.fourth-company {
+  width: 80px;
+  height: 42px;
+  fill: currentColor;
+}
+
+.fifth-company {
+  width: 59px;
+  height: 47px;
+  fill: currentColor;
+}
+
+.sixth-company {
+  width: 89px;
+  height: 45px;
+  fill: currentColor;
+}
+
+.client-logo {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  padding: 0;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $icon-gray-color;
+  border-radius: 4px;
+  color: $icon-gray-color;
+
+  transition: border-color, color, $time $cubic;
+
+
+&:hover,
+&:focus {
+  color: $accent-color;
+  border-color: $accent-color;
+}
+}

@@ -1,0 +1,56 @@
+/* Услуги*/
+
+.services-list {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+
+
+
+.services-item {
+  width: calc((100% - 60px) / 3);
+
+  &:not(:last-child) {
+  margin-right: 30px;
+}
+}
+
+.services-title,
+.team-title,
+.client-title {
+  color: $title-text-color;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.service-overlay {
+  position: relative;
+}
+
+.service-name {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: $primary-white-color;
+}

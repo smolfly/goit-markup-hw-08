@@ -1,0 +1,124 @@
+
+/* Примеры работ */
+
+.case-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.case-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 0px;
+
+
+&:hover .text-overlay {
+  transform: translateY(0);
+  transition: transform $time $cubic;
+}
+
+&:nth-child(3n) {
+  margin-right: 0;
+}
+
+&:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+}
+
+.case-link {
+  display: block;
+
+&:hover,
+&:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+}
+
+
+.case-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  color: $title-text-color;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+}
+
+.case-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $primary-text-color;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.card-content {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  border: 1px solid #eeeeee;
+}
+
+.card-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-overlay {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0 24px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(33, 150, 243, 0.9);
+  color: $primary-white-color;
+  transform: translateY(100%);
+  transition: transform $time $cubic;
+
+}
+
+
+
+.submit {
+  display: inline-flex;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.87px;
+  letter-spacing: 0.06em;
+  align-items: center;
+  justify-content: center;
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

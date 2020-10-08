@@ -1,0 +1,32 @@
+/* Логотип*/
+
+.logo-first {
+  color: $accent-color;
+  font-family: $logo-font;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+ 
+
+  @media screen and (min-width: $mobile) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+    display: flex;
+    margin-right: 88px;
+    align-items: center;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    display: flex;
+    margin-right: 93px;
+  }
+}
+.logo-past {
+  color: #000000;
+}
+
+.logo-past-footer {
+  color: $primary-white-color;
+}

@@ -1,0 +1,68 @@
+body {
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
+}
+
+.flexbox {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.portfolio-line {
+  border: 1px solid #ececec;
+}
+
+// .section {
+//   padding-bottom: 94px;
+//   padding-top: 94px;
+// }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
