@@ -531,6 +531,10 @@ img {
 }
 
 /* Контакты */
+.contact-info {
+  display: none;
+}
+
 @media screen and (min-width: 1200px) {
   .contact-info {
     display: flex;
@@ -580,6 +584,9 @@ img {
 
 /* Меню Бургер */
 .menu-burger {
+  position: absolute;
+  top: 20px;
+  right: 10px;
   display: inline-flex;
   margin: 0;
   padding: 0;
