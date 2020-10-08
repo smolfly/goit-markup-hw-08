@@ -59,6 +59,11 @@
 .navigation {
   display: none;
 
+
+.navigation.is-open {
+  display: flex;
+}  
+
   
   @media screen and (min-width: $mobile){
    display: flex;
@@ -102,7 +107,8 @@
 /* Контакты */
 
 .contact-info {
-display: none;
+
+ display: none;
  
   @media screen and (min-width: $desktop) {
     display: flex;

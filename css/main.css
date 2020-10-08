@@ -492,6 +492,10 @@ img {
   display: none;
 }
 
+.navigation .navigation.is-open {
+  display: flex;
+}
+
 @media screen and (min-width: 480px) {
   .navigation {
     display: flex;
