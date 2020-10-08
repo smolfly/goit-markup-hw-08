@@ -488,19 +488,8 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 480px) {
-  .navigation .navigation .is-open {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    background-color: #ffffff;
-    top: 100%;
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 1200px) {
-  .navigation .navigation .is-open {
+  .navigation {
     color: #212121;
     font-weight: 500;
     font-size: 14px;
@@ -514,6 +503,17 @@ img {
     display: flex;
     align-items: center;
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navigation .navigation.is-open {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: #ffffff;
+    top: 100%;
+    width: 100%;
   }
 }
 
