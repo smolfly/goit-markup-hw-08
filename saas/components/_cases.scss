@@ -1,45 +1,51 @@
-
 /* Примеры работ */
 
 .case-list {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding-left: 0;
   padding-top: 0;
   padding-bottom: 0;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .case-item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 0px;
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
 
+  &:hover .text-overlay {
+    transform: translateY(0);
+    transition: transform $time $cubic;
+  }
 
-&:hover .text-overlay {
-  transform: translateY(0);
-  transition: transform $time $cubic;
-}
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 
-&:nth-child(3n) {
-  margin-right: 0;
-}
-
-&:nth-child(-n + 6) {
-  margin-bottom: 30px;
-}
+  &:nth-child(-n + 6) {
+    margin-bottom: 30px;
+  }
 }
 
 .case-link {
   display: block;
 
-&:hover,
-&:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
-}
-
 
 .case-title {
   margin-top: 0;
@@ -97,10 +103,7 @@
   color: $primary-white-color;
   transform: translateY(100%);
   transition: transform $time $cubic;
-
 }
-
-
 
 .submit {
   display: inline-flex;
