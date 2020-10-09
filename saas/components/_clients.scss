@@ -1,12 +1,28 @@
 /* Постоянные клиенты */
 
 .clients-list {
+  display: flex;
+  flex-wrap: wrap;
+
   @media screen and (min-width: $desktop) {
     display: flex;
   }
 }
 
 .client-item {
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
   @media screen and (min-width: $desktop) {
     width: calc((100%-5 * 30px) / 6);
 
