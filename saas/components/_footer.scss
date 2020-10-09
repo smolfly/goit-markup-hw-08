@@ -1,33 +1,40 @@
 /* Футер */
 
 .footer .logo-first {
-  display: flex;
   margin-top: 0;
   margin-bottom: 20px;
+  align-items: center;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background: $secondary-darkgray-color;
+  text-align: center;
+  align-items: center;
 }
 
 .footer-container {
-
-  
   @media screen and (min-width: $desktop) {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
   }
 }
 
 .adress-box {
-  margin-right: 70px;
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
 }
 
 .footer-contact-link {
   display: flex;
+  flex-direction: column;
   margin-top: 0;
   margin-bottom: 9px;
   color: $footer-contact-text-color;
@@ -36,12 +43,23 @@
   text-decoration: none;
   font-style: normal;
 
-  transition-property: color $time $cubic;
- 
- &:hover,
- &:focus {
-  color: $accent-color;
-}
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 9px;
+    color: $footer-contact-text-color;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    font-style: normal;
+
+    transition-property: color $time $cubic;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
 }
 
 .tel {
@@ -75,10 +93,9 @@
 }
 
 .follow-item {
-
   &:not(:last-child) {
     margin-right: 10px;
-}
+  }
 }
 
 .sn-footer {
@@ -97,8 +114,8 @@
 
   &:hover,
   &:focus {
-  background-color: $accent-color;
-}
+    background-color: $accent-color;
+  }
 }
 
 .icon-footer {
@@ -106,8 +123,6 @@
   height: 20px;
   fill: currentColor;
 }
-
-
 
 /* Форма Футера */
 
@@ -118,6 +133,7 @@
 .form-footer {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .icon-send {
