@@ -14,32 +14,30 @@
   padding-left: 0;
 }
 
-
-
 .services-item {
   width: calc((100% - 60px) / 3);
 
   &:not(:last-child) {
-  margin-right: 30px;
-}
+    margin-right: 30px;
+  }
 }
 
 .services-title,
 .team-title,
 .client-title {
   color: $title-text-color;
-  
+
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
   margin-top: 0;
-  
-    @media screen and (min-width: $desktop) {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $desktop) {
     font-size: 36px;
     margin-bottom: 50px;
   }
-
 }
 
 .service-overlay {

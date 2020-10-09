@@ -5,25 +5,28 @@
 }
 
 .team-list {
-
-
-  @media screen and (min-width: $desktop){
-  display: flex;
+  padding: 0;
   margin: 0;
-  padding-left: 0;
-}
+  font-size: 0;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+  }
 }
 
 .team-item {
+  margin-top: 30px;
 
-  @media screen and (min-width: $desktop){
-  width: calc((100% - 90px) / 4);
-  
- &:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 4);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
-}}
-
 
 .team-name {
   color: $title-text-color;
@@ -82,7 +85,6 @@
     background-color: $accent-color;
     color: $primary-white-color;
   }
-
 }
 
 .icon-ig,
@@ -93,4 +95,3 @@
   height: 20px;
   fill: currentColor;
 }
-

@@ -336,6 +336,8 @@ ul {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -692,11 +694,6 @@ img {
   cursor: pointer;
 }
 
-.section {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
 /* Наши преимущества */
 .advantages {
   padding-top: 60px;
@@ -823,6 +820,7 @@ img {
   line-height: 1.17;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -861,12 +859,22 @@ img {
   background-color: #f5f4fa;
 }
 
+.team-list {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
 @media screen and (min-width: 1200px) {
   .team-list {
     display: flex;
     margin: 0;
     padding-left: 0;
   }
+}
+
+.team-item {
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 1200px) {
