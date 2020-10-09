@@ -13,9 +13,13 @@
 }
 
 .footer-container {
+
+  
+  @media screen and (min-width: $desktop) {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
+  }
 }
 
 .adress-box {

@@ -1,5 +1,13 @@
 /* Услуги*/
 
+.services {
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
 .services-list {
   display: flex;
   margin: 0;
@@ -20,13 +28,18 @@
 .team-title,
 .client-title {
   color: $title-text-color;
-  margin-top: 0;
-  margin-bottom: 50px;
-
+  
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 0;
+  
+    @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
 }
 
 .service-overlay {

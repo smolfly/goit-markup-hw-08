@@ -1,12 +1,20 @@
 /* Постоянные клиенты */
 
 .clients-list {
+
+  
+  @media screen and (min-width: $desktop) {
   display: flex;
+  }
 }
 
 
 
 .client-item {
+
+  
+  @media screen and (min-width: $desktop) {
+
   width: calc((100%-5 * 30px) / 6);
 
   display: flex;
@@ -15,11 +23,11 @@
   padding: 0;
   justify-content: center;
   align-items: center;
-
+  
 
   &:not(:last-child) {
   margin-right: 30px;
-}
+}}
 }
 
 .first-company {

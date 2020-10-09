@@ -10,24 +10,29 @@
 }
 
 .advantages-title {
+  text-align: center;
   color: $title-text-color;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin: 30px 0 10px 0;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
+
 .advantages-text {
   margin-top: 0;
   margin-bottom: 0;
+  text-align: left;
+  line-height: 1.7;
+  margin: 0 0 30px 0; 
+ 
 }
 
 .advantages-list {
   margin: 0;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 0;
+
 
   @media screen and (min-width: $desktop) {
     display: flex;
