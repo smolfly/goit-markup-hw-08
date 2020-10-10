@@ -482,6 +482,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: #212121;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -494,16 +495,6 @@ img {
     font-size: 14px;
     padding-top: 32px;
     padding-bottom: 32px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .site-nav .link {
-    display: flex;
-    color: #212121;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-size: 14px;
   }
 }
 
@@ -548,6 +539,12 @@ img {
 
 .site-nav-item .link {
   color: #212121;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav-item .link {
+    padding-bottom: 8px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1602,9 +1599,19 @@ textarea:focus {
 
 /* Футер */
 .footer .logo-first {
+  display: block;
   margin-top: 0;
-  margin-bottom: 20px;
   align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer .logo-first {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1621,12 +1628,38 @@ textarea:focus {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    display: flex;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
     justify-content: flex-start;
     text-align: center;
     align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .adress-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -1675,7 +1708,6 @@ textarea:focus {
 }
 
 .adress-text {
-  margin-top: 20px;
   margin-bottom: 9px;
   color: #ffffff;
   font-weight: 400;
@@ -1760,6 +1792,15 @@ textarea:focus {
   display: block;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-footer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .form-footer {
   align-items: center;
 }
@@ -1767,7 +1808,6 @@ textarea:focus {
 @media screen and (min-width: 1200px) {
   .form-footer {
     display: flex;
-    align-items: flex-start;
   }
 }
 

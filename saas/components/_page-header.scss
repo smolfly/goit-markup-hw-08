@@ -29,6 +29,7 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: $title-text-color;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -41,15 +42,6 @@
     font-size: 14px;
     padding-top: 32px;
     padding-bottom: 32px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    color: $title-text-color;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    font-size: 14px;
   }
 }
 
@@ -93,7 +85,9 @@
 
 .site-nav-item .link {
   color: $title-text-color;
-  // padding-bottom: 8px;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 8px;
+  }
 }
 
 .navigation {
@@ -117,6 +111,11 @@
 
     // align-items: center;
     // margin-right: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    // padding-top: 32px;
+    // padding-bottom: 32px;
   }
 }
 
