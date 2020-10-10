@@ -18,6 +18,11 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages-text {
@@ -25,18 +30,20 @@
   margin-bottom: 0;
   text-align: left;
   line-height: 1.7;
-  margin: 0 0 30px 0; 
- 
+  margin: 0 0 30px 0;
 }
 
 .advantages-list {
   margin: 0;
   padding: 0;
 
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   @media screen and (min-width: $desktop) {
     display: flex;
-    margin: 0;
     padding-left: 0;
   }
 }
@@ -53,6 +60,19 @@
     background-color: $secondary-gray-color;
     border-radius: 4px;
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (min-width: $desktop) {
