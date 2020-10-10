@@ -37,11 +37,13 @@ ul {
 .flexbox {
   @media screen and (min-width: $tablet) {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 }
 

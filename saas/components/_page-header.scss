@@ -8,6 +8,11 @@
 
   border-bottom: 1px solid #ececec;
 
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: flex-start;
+  }
+
   @media screen and (min-width: $desktop) {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -87,8 +92,6 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
-    // padding-top: 32px;
-    // padding-bottom: 32px;
 
     font-weight: 500;
     font-size: 14px;
@@ -100,9 +103,9 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex;
-    align-items: center;
-    margin-right: auto;
+
+    // align-items: center;
+    // margin-right: auto;
   }
 }
 
@@ -143,7 +146,8 @@
     align-items: center;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
   }
 }
 

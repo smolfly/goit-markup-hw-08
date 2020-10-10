@@ -364,6 +364,8 @@ ul {
 @media screen and (min-width: 768px) {
   .flexbox {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 }
 
@@ -371,7 +373,7 @@ ul {
   .flexbox {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 }
 
@@ -453,6 +455,13 @@ img {
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -544,9 +553,6 @@ img {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex;
-    align-items: center;
-    margin-right: auto;
   }
 }
 
@@ -591,7 +597,8 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-info {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -1345,13 +1352,20 @@ textarea:focus {
 
 .sorter-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin-top: 0;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
+  padding: 0;
 }
 
 .sorter-item {
   margin-left: 8px;
+  margin-bottom: 15px;
+}
+
+.sorter-item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 
 /* Примеры работ */
@@ -1373,25 +1387,31 @@ textarea:focus {
   }
 }
 
+.case-item {
+  margin-bottom: 30px;
+}
+
+.case-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 1200px) {
   .case-item {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 0px;
   }
+  .case-item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .case-item:nth-child(-n + 6) {
+    margin-bottom: 30px;
+  }
 }
 
 .case-item:hover .text-overlay {
   transform: translateY(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.case-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.case-item:nth-child(-n + 6) {
-  margin-bottom: 30px;
 }
 
 .case-link {
@@ -1499,6 +1519,7 @@ textarea:focus {
     display: flex;
     justify-content: flex-start;
     text-align: center;
+    align-items: baseline;
   }
 }
 
@@ -1571,6 +1592,7 @@ textarea:focus {
 @media screen and (min-width: 1200px) {
   .follow {
     margin-right: 93px;
+    margin-bottom: 0;
   }
 }
 
@@ -1638,6 +1660,7 @@ textarea:focus {
 @media screen and (min-width: 1200px) {
   .form-footer {
     display: flex;
+    align-items: flex-start;
   }
 }
 
