@@ -451,9 +451,14 @@ img {
 .page-header {
   display: flex;
   position: relative;
-  padding-top: 16px;
-  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -487,6 +492,8 @@ img {
   .site-nav .link {
     display: flex;
     font-size: 14px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -516,6 +523,12 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .link.current::after {
+    bottom: -1px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -601,6 +614,9 @@ img {
   .contact-info {
     display: flex;
     flex-direction: column;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-right: 15px;
   }
 }
 

@@ -3,8 +3,11 @@
 .page-header {
   display: flex;
   position: relative;
-  padding-top: 16px;
-  padding-bottom: 16px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 
   border-bottom: 1px solid #ececec;
 
@@ -36,6 +39,8 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     font-size: 14px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -66,7 +71,7 @@
   background-color: $accent-color;
 
   @media screen and (min-width: $tablet) {
-    // bottom: -25px;
+    bottom: -1px;
   }
 }
 
@@ -154,6 +159,9 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-right: 15px;
   }
 }
 
