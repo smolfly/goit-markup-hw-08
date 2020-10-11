@@ -451,6 +451,7 @@ img {
 .page-header {
   display: flex;
   position: relative;
+  z-index: 1;
   border-bottom: 1px solid #ececec;
 }
 
