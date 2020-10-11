@@ -361,6 +361,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .flexbox {
+    margin: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .flexbox {
     display: flex;
@@ -414,6 +420,7 @@ img {
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
+  margin: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -452,6 +459,7 @@ img {
   display: flex;
   position: relative;
   z-index: 1;
+  margin: 0;
   border-bottom: 1px solid #ececec;
 }
 
@@ -573,6 +581,7 @@ img {
   .navigation {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
   }
 }
 
@@ -635,6 +644,12 @@ img {
 @media screen and (max-width: 767px) {
   .contact-item:not(:last-child) {
     margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
@@ -1546,7 +1561,7 @@ textarea:focus {
   margin-bottom: 4px;
   color: #212121;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.9;
   letter-spacing: 0.06em;
 }

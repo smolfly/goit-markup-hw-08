@@ -35,6 +35,10 @@ ul {
 }
 
 .flexbox {
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
+    margin: 0;
+  }
+
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
